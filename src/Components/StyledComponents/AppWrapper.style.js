@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {setGrid} from "../styles.function"
-export const AppWrapper = styled.div `
+export const AppWrapper = styled.main `
 ${setGrid()};
 grid-template-columns: 1fr;
 grid-template-rows:5rem 1fr;

@@ -34,8 +34,7 @@ const countryReducer = (state=initialState, action)=> {
          return {
              ...state, 
              countries: getFilteredElem(state.countries, "name", action.payload)
-             
-            //  countries:state.countries.filter(country=> country.name.includes(action.payload))
+
          }
      }
     

@@ -1,7 +1,7 @@
 import React from 'react'
 import IndianLogo from "../../img/indian4.png"
 
-import {StyledImgWrapper} from "../StyledCpmponents/StyledImg"
+import {StyledImgWrapper} from "../StyledComponents/StyledImg"
 import {LogoImg} from "./Logo.style"
 const Logo = ({width, height}) => {
     return (

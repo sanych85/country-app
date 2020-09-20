@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 import {FETCH_COUNTRIES,FETCH_COUNTRY,COUNTRY_LOADING,SEARCH_COUNTRY} from "../actions/countriesActions"
-// import {SET_RANDOM_COUNTRY} from "../actions/games.actions"
+
 import {setRandomCountry} from "../actionsCreators/games.actionCreators"
 
 export const fetchData =(payload)=> {
@@ -50,16 +50,6 @@ export const fetchServerData = (url,data)=> {
 
 export const fetchSingleCountry =(url)=> {
     return (dispatch)=> {
-        // const isLoading =  dispatch(setCountryLoading(true))
-        // const {data:[{population,region,flag,name,capital}]} = await axios.get(url)
-        // await dispatch(setCountryLoading(false))
-        // const countryData = {
-        //     name,
-        //     region,
-        //     population,
-        //     flag,
-        //     capital
-        // }
         dispatch(setCountryLoading(true))
         axios.get(url)
         .then(response=> {

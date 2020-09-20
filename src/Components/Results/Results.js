@@ -3,11 +3,11 @@ import {
   
   InnerWrapper,
 
-} from "../StyledCpmponents/Wrappers";
+} from "../StyledComponents/Wrappers";
 import {ResultsWrapper,GameStatistics} from "./Results.style"
 import {ResultSpan} from "../Results/Results.style"
-import {OutputSpan} from "../StyledCpmponents/Span.style"
-import {CommonSpan} from "../StyledCpmponents/Span.style"
+import {OutputSpan} from "../StyledComponents/Span.style"
+import {CommonSpan} from "../StyledComponents/Span.style"
 
 const Results = React.memo(({
   answers: { wrongAnswers, rightAnswers, totalAnswers, rate },

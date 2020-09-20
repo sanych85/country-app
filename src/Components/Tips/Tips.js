@@ -1,5 +1,5 @@
 import React from "react";
-import {OutputSpan,CommonSpan} from "../StyledCpmponents/Span.style"
+import {OutputSpan,CommonSpan} from "../StyledComponents/Span.style"
 
 import {TipWrapper,TipInnerWrapper} from "../Tips/Tips.style"
 const Tips = ({ country :{population, capital, region}}) => {

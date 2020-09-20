@@ -3,9 +3,7 @@ import {SelectWrapper,StyledSelect} from "./Select.style"
 
 const Select = ({ dataArray,selectSomething,optionsData }) => {
   const getOptions = (dataArray) => {
- 
     if (dataArray) {
-
       const options = optionsData.map((data, index) => (
         <option value={data} key={index} >
           {data}
@@ -16,8 +14,6 @@ const Select = ({ dataArray,selectSomething,optionsData }) => {
       return;
     }
   };
-
-
 
   return (
     <SelectWrapper>
@@ -31,9 +27,3 @@ const Select = ({ dataArray,selectSomething,optionsData }) => {
 };
 
 export default Select;
-
-// <select name="select"> <!--Supplement an id here instead of using 'name'-->
-//   <option value="value1">Значение 1</option>
-//   <option value="value2" selected>Значение 2</option>
-//   <option value="value3">Значение 3</option>
-// </select>

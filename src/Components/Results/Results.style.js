@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {GridWrapper} from "../StyledCpmponents/Wrappers"
+import {GridWrapper} from "../StyledComponents/Wrappers"
 import {sizes,setBorder} from "../styles.function"
-import {OutputSpan} from "../StyledCpmponents/Span.style"
+import {OutputSpan} from "../StyledComponents/Span.style"
 
 export const ResultsWrapper = styled.div `
  ${setBorder()};

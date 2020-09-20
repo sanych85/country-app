@@ -31,7 +31,7 @@ const gamesReducer = (state = INITIAL_STATE, action) => {
         countryAnswer: null,
       };
     }
-
+    
     case SET_COUNTRY_ANSWER: {
       const answersData=state.answers
       const rightAnswers="rightAnswers";
@@ -45,10 +45,7 @@ const gamesReducer = (state = INITIAL_STATE, action) => {
             countryAnswer: action.answer,
    
             answers: getAnswerCount(rightAnswers, wrongAnswers, answersData)
-              // ...state.answers,
-              // rightAnswers: answersData.rightAnswers + 1,
-              // totalAnswers:answersData.rightAnswers+1+answersData.wrongAnswers,
-              // rate: ((answersData.rightAnswers+1)/(answersData.rightAnswers+1+answersData.wrongAnswers)).toFixed(2)*100
+
           };
         } else {
             
@@ -56,12 +53,8 @@ const gamesReducer = (state = INITIAL_STATE, action) => {
               
             ...state,
             countryAnswer: action.answer,
-            // obj1,
             answers: getAnswerCount( wrongAnswers,rightAnswers, answersData) 
-              // ...answersData,
-              // wrongAnswers: answersData.wrongAnswers + 1,
-              // totalAnswers:answersData.wrongAnswers+1+answersData.rightAnswers,
-              // rate: (answersData.rightAnswers/(answersData.rightAnswers+answersData.wrongAnswers+1)).toFixed(2)*100
+
 
           };
         }
@@ -69,11 +62,7 @@ const gamesReducer = (state = INITIAL_STATE, action) => {
       }
       else {
          const id = uuidv4()
-        // id={
-        //  id:id,
-        //  rate:state.answers.rate,
-        // }
-        
+ 
         if (action.answer.toLowerCase() === action.country.name.toLowerCase()) {
 
           return {

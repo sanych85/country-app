@@ -10,7 +10,7 @@ export const getRandomData = (array)=> {
 export const getTotalMax = (state)=> {
     const obj =state.games.gamesArchive;
 
-    console.log("we are imn max function")
+
     if(Object.values(obj).length>0) {
         const arr = Object.values(obj)
      return  arr.sort((a, b)=> {

@@ -6,12 +6,10 @@ import {
   MainPaginationWrapper,
 } from "./Pagination.style";
 import { ArrowLength } from "../../img/left.svg";
-// import Img from "../../Components/Img";
+
 import LeftArrow from "../../Components/SvgComponents/LeftArrow";
 import RightArrow from "../../Components/SvgComponents/RightArrow";
 import { useState } from "react";
-
-
 
 const Pagination = ({
   items,
@@ -20,37 +18,28 @@ const Pagination = ({
   currentPage,
   setCurrentPage,
 }) => {
+  // assign observed page, page we change clicking right or left and change ot depending on terms
   const [observedPage, setObservedPage] = useState(0)
 
 
   const navigateBack = () => {
-
     if (observedPage > 1) {
-
       setObservedPage(observedPage-1)
     }
-
     else {
-
       setObservedPage(0)
     }
   };
   const navigateForward = (pagesList) => {
 
     if (observedPage < pagesList.length-5) {
-  
-    
       setObservedPage(observedPage+1)
     }
   };
   const getItems = (items, itemsQuantityOnPage) => {
-   
     if (items) {
       const pages = Math.ceil(items.length / +itemsQuantityOnPage);
-
       const pagesList = [...Array(pages).keys()];
-
-
 
       return (
         <PaginationWrapper>

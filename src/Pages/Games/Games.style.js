@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import {setFlex,setShadow,setGrid,setBorder } from "../../Components/styles.function"
-import {GridWrapper} from "../../Components/StyledCpmponents/Wrappers"
+import {GridWrapper} from "../../Components/StyledComponents/Wrappers"
 
 import {
   StyledImgWrapper,
 
-} from "../../Components/StyledCpmponents/StyledImg";
+} from "../../Components/StyledComponents/StyledImg";
 export const GamesWrapper = styled.div`
   /* display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledImgWrapper,StyledImg} from "./StyledCpmponents/StyledImg"
+import {StyledImgWrapper,StyledImg} from "./StyledComponents/StyledImg"
 const Img = ({src, width, height}) => {
 
     return (

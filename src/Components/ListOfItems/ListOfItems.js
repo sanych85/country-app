@@ -2,8 +2,8 @@ import React from "react";
 import {
   OutputSpan,
   CommonSpan,
-} from "../../Components/StyledCpmponents/Span.style";
-import { SpanWrapper } from "../../Components/StyledCpmponents/Wrappers";
+} from "../StyledComponents/Span.style";
+import { SpanWrapper } from "../StyledComponents/Wrappers";
 const ListOfItems = ({ array, type, singleElem }) => {
   const getSpan = (type, elem, index) => {
     if (type === "lastSpan") {

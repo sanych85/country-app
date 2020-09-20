@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Button } from "../../Components/StyledCpmponents/Button.style";
-import { StyledImg } from "../../Components/StyledCpmponents/StyledImg";
+import { Button } from "../../Components/StyledComponents/Button.style";
+import { StyledImg } from "../../Components/StyledComponents/StyledImg";
 import { GamesImgWrapper } from "./Games.style";
 import Input from "../../Components/Input/Input";
 import Answer from "../../Components/Answer/Answer";
 import Results from "../../Components/Results/Results";
 import { GamesWrapper, AnswerMainWrapper } from "./Games.style";
-import { ButtonWrapper } from "../../Components/StyledCpmponents/Button.style";
+import { ButtonWrapper } from "../../Components/StyledComponents/Button.style";
 import Tips from "../../Components/Tips/Tips";
 import { getRandomData } from "../../utils";
-// import { TipButton } from "./Games.style";
+
 import {
   getRandomCountry,
   getCountryAnswer,
@@ -31,7 +31,6 @@ import MaxResult from "../../Components/MaxResult/MaxResult";
 const Games = () => {
   const dispatch = useDispatch();
   const [answer, getAnswerFromInput] = useState("");
-
   const country = useSelector((state) => getRandomCountry(state));
   const countries = useSelector((state) => getCountries(state));
   const countryAnswer = useSelector((state) => getCountryAnswer(state));
@@ -40,13 +39,14 @@ const Games = () => {
   const rate = useSelector((state) => getRate(state));
   const gameStatus = useSelector((state) => getGameStatus(state));
   const maxResult = useSelector((state) => getTotalMax(state));
-  // const {flag,population, region,capital} = country
 
+  // show or hidden our tips. 
   const [isShowTips, setShow] = useState(false);
   const showTip = () => {
     setShow((prevShowTips) => !prevShowTips);
   };
 
+  //get random country from our country array
   const getRandomElem = () => {
     const randomCountryValue = getRandomData(countries);
     dispatch(setRandomCountry(randomCountryValue));
@@ -55,10 +55,12 @@ const Games = () => {
     }
   };
 
+  //start new game
   const beginNewGame = () => {
     dispatch(startNewGame(country));
   };
 
+  // dispatch answer we type in input to compare it to our random country name
   const getAnswer = (answer, country) => {
     if (answer && country) {
       dispatch(setCountryAnswer(answer, country));

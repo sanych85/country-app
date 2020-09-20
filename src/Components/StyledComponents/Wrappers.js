@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {setFlex,setGrid, setShadow} from "../../Components/styles.function"
+import {setFlex,setGrid, setShadow} from "../styles.function"
 
 export const Wrapper = styled.div `
 ${setFlex()};

@@ -1,16 +1,3 @@
-// export const lightTheme = {
-
-//     background: `green`,
-// }
-
-// export const darkTheme = {
-
-//     background: `black`,
-// }
-// export const greyTheme = {
-
-//     background: `grey`,
-// }
 
 export const themes = [
 

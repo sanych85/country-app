@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { fetchSingleCountry } from "../../redux/actionsCreators/countriesActionCreators";
 import { connect, useSelector } from "react-redux";
-import { CardWrapper } from "../../Components/StyledCpmponents/CardWrapper";
+import { CardWrapper } from "../../Components/StyledComponents/CardWrapper";
 import Img from "../../Components/Img";
 import Loader from "../../Components/Loader/Loader";
 import Heading from "../../Components/Heading/Heading";
 
-import { DetailInnerWrapper,ListOfItemsWrapper } from "../../Components/StyledCpmponents/Wrappers";
+import { DetailInnerWrapper,ListOfItemsWrapper } from "../../Components/StyledComponents/Wrappers";
 
-import { Button } from "../../Components/StyledCpmponents/Button.style";
+import { Button } from "../../Components/StyledComponents/Button.style";
 import ListOfItems from "../../Components/ListOfItems/ListOfItems";
 const CountryDetail = ({ match, fetchSingleCountry, history }) => {
   // const {name, population,region, capital,flag} = useSelector(state=>state.country.currentCountry)
@@ -41,27 +41,12 @@ const CountryDetail = ({ match, fetchSingleCountry, history }) => {
             {name}
           </Heading>
           <Img src={flag} />
-          {/* <div>
-            <CommonSpan>population</CommonSpan>
-            <OutputSpan> {population.toLocaleString('ru')}</OutputSpan>
-          </div>
-          <div>
-            <CommonSpan>region</CommonSpan>
-            <OutputSpan>{region}</OutputSpan>
-          </div>
-          <div>
-            <CommonSpan>capital</CommonSpan>
-            <OutputSpan>{capital}</OutputSpan>
-          </div> */}
           <ListOfItemsWrapper>
             <ListOfItems singleElem={region} type="region" />
             <ListOfItems singleElem={population} type="population" />
             <ListOfItems singleElem={area} type="area" />
             
             <ListOfItems singleElem={capital} type="capital" />
-            
-            {/* <ListOfItems singleElem={} type="timezones"/> */}
-
             <ListOfItems array={borders} type="borders" />
             <ListOfItems array={languages} type="languages" />
             <ListOfItems array={currencies} type="currencies" />

@@ -1,4 +1,4 @@
-import {Wrapper} from "../StyledCpmponents/Wrappers"
+import {Wrapper} from "../StyledComponents/Wrappers"
 import styled from 'styled-components';
 
 export const TipWrapper = styled(Wrapper) `

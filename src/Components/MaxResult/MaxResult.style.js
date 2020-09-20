@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {InnerWrapper} from "../../Components/StyledCpmponents/Wrappers"
+import {InnerWrapper} from "../StyledComponents/Wrappers"
 
 export const MaxResultWrapper = styled(InnerWrapper) `
 

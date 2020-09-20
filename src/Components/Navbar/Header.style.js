@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import {
-
   setFlex,
-
   setGrid,
 } from "../styles.function";
-import { Button } from "../StyledCpmponents/Button.style";
-import { sizes } from "../../Components/styles.function"; 
+
+import { Button } from "../StyledComponents/Button.style";
+import { sizes } from "../styles.function"; 
+
+
+export const StyledHeader = styled.header `
+width: 100vw;
+`
+
 export const StyledNavbar = styled.nav`
   width: 100%;
 
@@ -18,7 +23,7 @@ export const StyledNavbar = styled.nav`
 
   background: ${(props) => props.theme.secondaryColor};
   @media (max-width: ${sizes.tablet}px) {
-    grid-template-columns: 5rem 5rem;
+    grid-template-columns: 1fr 3fr;
   }
 `;
 
@@ -86,7 +91,7 @@ export const NavbarButton = styled(Button)`
 
 export const NavbarButtonWrapper = styled.div`
   @media (max-width: ${sizes.tablet}px) {
-    display: none;
+    /* display: none; */
     /* position: absolute; */
 
   }
@@ -139,8 +144,7 @@ export const ToggledWrapper = styled.div`
   right: 2%;
   border-radius: 10px;
   display: none;
-  /* transition: -webkit-transform 0.5s ease-in;
-  transition: transform 0.5s ease-in; */
+
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   background-color: rgba(19, 11, 93, 0);
   border: 2px solid #e2e2e2;
@@ -152,7 +156,4 @@ export const ToggledWrapper = styled.div`
   }
 `;
 
-// @media (max-width: 300px) {
-//     width: 80px !important;
-//     height: 80px !important;
-// }
+

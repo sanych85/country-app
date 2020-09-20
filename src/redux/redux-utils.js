@@ -22,9 +22,4 @@ export const getAnswerCount = (type1, type2, data) => {
   };
 };
 
-// answers: {
-//     ...answersData,
-//     wrongAnswers: answersData.wrongAnswers + 1,
-//     totalAnswers:answersData.wrongAnswers+1+answersData.rightAnswers,
-//     rate: (answersData.rightAnswers/(answersData.rightAnswers+answersData.wrongAnswers+1)).toFixed(2)*100
 

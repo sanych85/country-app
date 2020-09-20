@@ -1,6 +1,6 @@
 import React from "react";
 import { AnswerWrapper } from "./Answer.style";
-import {OutputSpan} from "../StyledCpmponents/Span.style"
+import {OutputSpan} from "../StyledComponents/Span.style"
 const Answer = ({ country, answer, type }) => {
   const param = country[type].toLowerCase();
   const answerLowerCase = answer? answer.toLowerCase(): null

@@ -48,7 +48,6 @@ export const setGrid = ({minWidth="150px",gap="1rem"}={})=> {
    display:"grid",
    "align-items": "center",
    "justify-items": "center",
-  //  "grid-template-columns": `repeat(auto-fit, minmax(${minWidth}, 1fr))`,
    "grid-gap": `${gap}`
 
  }
@@ -59,7 +58,7 @@ export const setSelfGrid = ({alignSelf ="center", justifySelf="center"}={})=> {
     display:"grid",
     "align-self":`${alignSelf}`,
     "justify-self":`${justifySelf}`,
-    // "grid-gap": `${gap}`
+
  
   }
  }
@@ -79,33 +78,3 @@ export const sizes = {
   tablet: 768,
   phone: 576
 };
-
-// // Iterate through the sizes and create a media template
-// export const media = Object.keys(sizes).reduce((acc, label) => {
-//   acc[label] = (...args) => css`
-//     @media (min-width: ${sizes[label]}) {
-//       ${css(...args)}
-//     }
-//   `;
-//   return acc;
-// }, {});
-
-//using media-queries
-// ${media.tablet`
-//   display:grid;
-//   grid-template-columns:1fr 1fr;
-//   grid-column-gap:${setRem(32)};
-//   `};
-
-
-// export const media = Object.keys(sizes).reduce(
-//   (accumulator, label) => {
-//     accumulator[label] = (...args) => css`
-//       @media (min-width: ${sizes[label]}) {
-//         ${css(...args)};
-//       }
-//     `;
-//     return accumulator;
-//   },
-//   {}
-// );
