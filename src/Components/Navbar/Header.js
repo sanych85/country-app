@@ -41,7 +41,7 @@ const Header = ({ onChangeTheme }) => {
 
         <NavbarButtonWrapper>
           <NavbarButton onClick={onChangeTheme} position="absolute">
-            Ch Thm
+            Ch Th
           </NavbarButton>
         </NavbarButtonWrapper>
         <ToggledWrapper onClick={showMenu}>
