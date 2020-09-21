@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/country-app/static/css/main.42935188.chunk.css",
+    "main.js": "/country-app/static/js/main.70fe100c.chunk.js",
+    "main.js.map": "/country-app/static/js/main.70fe100c.chunk.js.map",
+    "runtime-main.js": "/country-app/static/js/runtime-main.85689c85.js",
+    "runtime-main.js.map": "/country-app/static/js/runtime-main.85689c85.js.map",
+    "static/js/2.9655a504.chunk.js": "/country-app/static/js/2.9655a504.chunk.js",
+    "static/js/2.9655a504.chunk.js.map": "/country-app/static/js/2.9655a504.chunk.js.map",
+    "index.html": "/country-app/index.html",
+    "precache-manifest.d66c2600264af606173e8a738a2c1416.js": "/country-app/precache-manifest.d66c2600264af606173e8a738a2c1416.js",
+    "service-worker.js": "/country-app/service-worker.js",
+    "static/css/main.42935188.chunk.css.map": "/country-app/static/css/main.42935188.chunk.css.map",
+    "static/js/2.9655a504.chunk.js.LICENSE.txt": "/country-app/static/js/2.9655a504.chunk.js.LICENSE.txt",
+    "static/media/indian4.png": "/country-app/static/media/indian4.08d4f989.png",
+    "static/media/left.svg": "/country-app/static/media/left.1a057415.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85689c85.js",
+    "static/js/2.9655a504.chunk.js",
+    "static/css/main.42935188.chunk.css",
+    "static/js/main.70fe100c.chunk.js"
+  ]
+}
