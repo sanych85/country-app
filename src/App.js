@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchAndSetServerData } from "./redux/actionsCreators/countriesActionCreators";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Header from "./Components/Navbar/Header";
 import Countries from "./Pages/Countries/Countries";
 
@@ -27,7 +27,7 @@ const App = () => {
     setTheme(themes[0]);
   };
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <AppWrapper>
@@ -42,7 +42,7 @@ const App = () => {
           </Switch>
         </AppWrapper>
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

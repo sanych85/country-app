@@ -18,7 +18,7 @@ transform: translate(10%, -50%); */
 }
 &:disabled {
     background-color: ${({bgColorDis})=> bgColorDis || "grey"};
-color: ${({color})=> color || "#e1e1e1"};
+    color: ${({color})=> color || "#ffffffa3"};
 }
  `
 

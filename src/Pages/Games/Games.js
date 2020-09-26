@@ -126,7 +126,7 @@ const Games = () => {
         {
           <Button
             bgColor="#7da47d"
-            color="white"
+        
             disabled={country ? false : true}
             onClick={showTip}>
             {isShowTips ? "Hide Tips" : "Show Tips"}
